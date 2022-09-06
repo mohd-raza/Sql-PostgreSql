@@ -1,0 +1,36 @@
+// Selecting Distinct records
+
+What unique departments are there?
+SELECT DISTINCT department
+FROM products
+
+// Greatest
+
+compute the cost to ship each item
+
+SELECT name,weight,GREATEST(30,2*weight)
+FROM products;
+
+// Least
+
+All products are on sale
+
+SELECT name,weight,GREATEST(30,2*weight)
+FROM products;
+
+// Case Keyword
+
+print each product and its price
+if price > 600 then high
+else if print > 300 the medium
+else print cheap
+
+SELECT
+  name,
+  price,
+  CASE
+  	WHEN price > 600 THEN 'high'
+  	WHEN price > 300 THEN 'medium'
+    ELSE 'cheap'
+  END
+FROM products;
